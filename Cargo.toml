@@ -1,0 +1,19 @@
+[package]
+name = "fortress"
+version = "0.1.0"
+edition = "2021"
+authors = ["Richard J. Mussell <richardmussell.github.io>"]
+description = "NIST 800-53 Systems Governance Engine (Zero-Lag Civilization)"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+nix = { version = "0.27", features = ["user", "hostname"] }
+tempfile = "3.8"
+ureq = "2.9"
+sha2 = "0.10"
